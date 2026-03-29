@@ -1,0 +1,162 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color:rgb(38, 36, 36);
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  width: 100%;
+  height: 100vh;
+  padding: 0 40px;          
+  box-sizing: border-box;
+  gap:100px;
+}
+
+
+.login-box {
+  max-width: 400px;          
+  padding: 30px;
+  width:100%;
+}
+
+.login-box h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #ff4d6d;
+}
+
+
+.input-container {
+    width: 100%;
+    padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid #ff6b81;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  color: #ff4d6d;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  width: 100%;
+background-color: #fff;
+  padding: 12px;
+  color: black;
+  font-size: 16px;
+}
+
+.eye-icon {
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+}
+
+
+.image-box img {
+  max-width: 450px;     
+  width: 100%;
+  height: auto;
+  margin-left: 40px;     
+}
+
+.input-box:focus {
+  border-color:#fff;
+  box-shadow: 0 0 6px #fff;
+}
+
+/* Login Button */
+.login-btn {
+  width: 90%;
+  padding: 14px;
+  background-color: #ff4d6d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #e63956;
+}
+
+.login-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#838383;
+    cursor: pointer;
+}
+.google:hover{
+    color: #555;
+}
+.password:hover{
+    color: #555;
+}
+/* Image Section */
+.image-box {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 30px;           
+  }
+
+  .login-box {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .image-box img {
+    max-width: 90%;
+    margin-left: 0;      
+  }
+  .input-container {
+    padding: 0 8px;
+  }
+
+  .input-icon {
+    font-size: 16px;
+  }
+
+  .eye-icon {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
